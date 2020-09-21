@@ -18,7 +18,7 @@ public class Test {
     public static void main(String[] args) {
         System.setProperty(DRIVER,FILE);
         WebDriver driver = new ChromeDriver();
-        driver.navigate().to("https://www.amazon.com/");
+        driver.navigate().to("https://www.amazon.com/ref=nav_logo");
         driver.manage().window().maximize();
         driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
         Actions a = new Actions(driver);
